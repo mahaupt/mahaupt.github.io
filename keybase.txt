@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/cbacon93
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ehaupt.de
+  * I am cbacon93 (https://keybase.io/cbacon93) on keybase.
+  * I have a public key ASB7zQnaiwbfhEelBLlF0EhnGVdpb_pSSJC-PM0ANE_Nkwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012045ef4bff5110e2d44eafc47bb25e7e6288d308c2df0d79c4b559efc427e1772b0a",
+      "host": "keybase.io",
+      "kid": "01207bcd09da8b06df8447a504b945d048671957696ffa524890be3ccd00344fcd930a",
+      "uid": "f948203c202f0c2e3f0d4e8171ea3d19",
+      "username": "cbacon93"
+    },
+    "merkle_root": {
+      "ctime": 1773397368,
+      "hash": "1bf06177087ef9e1b80e4edc97b0a9898223043b2167f5d4d540cbd8cd0708f802534c1d8e8ada99ef392344a2478f89ba4a1429f5325c798643b6393b16592e",
+      "hash_meta": "11971a3f9a138a3d16421e077180d9f02a7ea491aa99b3b249cd1205e70cb1d3",
+      "seqno": 27464149
+    },
+    "service": {
+      "entropy": "uuCMIIyOYd8o9MYhZfrnvfA6",
+      "hostname": "ehaupt.de",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.6.0"
+  },
+  "ctime": 1773397384,
+  "expire_in": 504576000,
+  "prev": "7a37219baf1523c0dd9d179e76eeede25d9b455ee65151751e227dc3b5788c53",
+  "seqno": 38,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEge80J2osG34RHpQS5RdBIZxlXaW/6UkiQvjzNADRPzZMKp3BheWxvYWTESpcCJsQgejchm68VI8DdnReedu7t4l2bRV7mUVF1HiJ9w7V4jFPEIG6rzKVOoWTAyXWHFRLz/onsXHQ3/7ByPRUNfZpI3ozoAgHCo3NpZ8RA7xULSMuV70jbpCmA/4DedEG+tnrSbomp/ko2NrssgYlQbIk0DViw74Yt3sOh0eqMEEPEhggEjCgPHuCeE/xuDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMCqcB8/BCstU8w8Xw0g8kvzjQBwINw4pQJeVbw+bXzgo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cbacon93
+
+==================================================================
