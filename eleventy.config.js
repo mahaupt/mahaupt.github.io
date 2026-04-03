@@ -29,8 +29,6 @@ export default function (eleventyConfig) {
   // Statische Assets durchreichen
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/css");
-  eleventyConfig.addPassthroughCopy("CNAME");
-  eleventyConfig.addPassthroughCopy({ ".well-known": ".well-known" });
 
   return {
     dir: {

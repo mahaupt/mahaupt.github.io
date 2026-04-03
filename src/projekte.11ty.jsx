@@ -27,13 +27,13 @@ export default function Projekte({ collections }) {
 
             return (
               <li key={p.url} className="border-t border-zinc-800 pt-10">
-                <article className="flex gap-6">
+                <article className="flex flex-col sm:flex-row gap-4 sm:gap-6">
                   {p.data.image && (
-                    <a href={p.url} className="shrink-0 w-36 h-24 overflow-hidden rounded-sm bg-zinc-900 flex items-center justify-center">
+                    <a href={p.url} className="shrink-0 w-full sm:w-36 h-40 sm:h-24 overflow-hidden rounded-sm bg-zinc-900 flex items-center justify-center">
                       <img
                         src={p.data.image}
                         alt={p.data.title}
-                        className="w-full h-full object-contain p-1"
+                        className="w-full h-full object-contain p-2 sm:p-1"
                       />
                     </a>
                   )}
