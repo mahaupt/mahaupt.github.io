@@ -1,0 +1,31 @@
+{
+  "name": "mahaupt.github.io",
+  "version": "1.0.0",
+  "description": "Persönliche Webseite von Marcel Haupt",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"tailwindcss -i src/css/main.css -o src/css/output.css --watch\" \"eleventy --serve\"",
+    "build": "tailwindcss -i src/css/main.css -o src/css/output.css && eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahaupt/mahaupt.github.io.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy-plugin-vite": "^7.0.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.2.2",
+    "@vitejs/plugin-react": "^6.0.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^4.2.2",
+    "tsx": "^4.21.0",
+    "vite": "^8.0.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "concurrently": "^9.2.1"
+  }
+}

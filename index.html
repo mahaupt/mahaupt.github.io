@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="INDEX,NOFOLLOW" />
+    <meta http-equiv="content-Language" content="de" />
+    <meta name="author" content="Marcel Haupt" />
+    <meta name="publisher" content="Marcel Haupt" />
+    <meta name="google-site-verification" content="Q-5a-lHtYIczSRJvayNIsz07TJ8p8D0ndfzB0gSnItg" />
+
+    <meta name="keywords" content="programmierer, web designer, web app entwicklung, it infrastruktur, it beratung, Marcel Haupt" />
+    <meta name="description" content="Entdecke die Zukunft der Webtechnologie mit Marcel Haupt und seinem Team - Über ein Jahrzehnt Erfahrung im Software- und IT Systemlösungen. Spezialisiert auf die Erstellung von Web-Apps, Infrastrukturlösungen und dem Business Consulting, streben wir danach, Dein Geschäft auf die nächste Stufe zu bringen und dem Wettbewerb immer einen Schritt voraus zu sein. Kontaktiere uns noch heute, um eine Beratung zu vereinbaren!">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./res/csx/bootstrap.min.css">
+    <link rel="stylesheet" href="./res/fa/css/all.min.css">
+
+    <title>Marcel Haupt - Web Technology Experts</title>
+
+    <style>
+      html {
+        font-size: 1.1em;
+      }
+      body:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left:0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -20;
+        background-image: linear-gradient(100deg, #363738, #161819);
+      }
+
+
+      #background-me {
+        height: 100%;
+        width: 100%;
+        z-index: -10;
+        position:absolute;
+        background: url(./res/img/hero.png) no-repeat right top;
+        background-size: contain;
+        right: 0;
+        top: 0px;
+      }
+      @media only screen and (max-width: 992px) {
+        #background-me {
+          top: 0px;
+          filter: brightness(0.5) contrast(0.7);
+          width: 1080px;
+        }
+      }
+      @media only screen and (max-width: 576px) {
+        #background-me {
+          filter: brightness(0.3) contrast(0.8);
+        }
+      }
+
+
+
+      #social-links {
+        font-size: 2.2em;
+      }
+      .spacer {
+        width: 100%;
+        height: 10vh;
+      }
+      @media only screen and (max-width: 576px) {
+        #social-links {
+          font-size: 3em;
+        }
+        .spacer {
+          width: 100%;
+          height: 6vh;
+        }
+      }
+      .wrapper {
+        position: relative;
+      }
+      .bg-color {
+        background-color: white;
+      }
+      .txt-shadow {
+        text-shadow: 0px 0px 3px #000;
+      }
+      .footer {
+        background-color: #02020278;
+        color: #e3e3e3;
+        border-radius: 5px 5px 0 0;
+      }
+      .microtx {
+        transition: .5s all;
+      }
+      .microtx:hover {
+        transform: scale(1.01);
+        transition: .1s all;
+      }
+      .microtx-sdw:hover {
+        box-shadow: 1px 1px 2px 1px #00000044;
+        transition: .1s all;
+      }
+      .profile-img {
+        box-shadow: 1px 1px 4px 1px #000000c7;
+      }
+      .profile-img:hover {
+        box-shadow: 1px 1px 8px 1px #000000c7;
+        transition: .1s all;
+      }
+      #project-showcase-expand .col-12 {
+        text-align:center;
+      }
+      #project-showcase-expand button {
+        font-size: 3em;
+        width:100px;
+      }
+
+      .animate {
+        opacity: 0;
+        transition: all 1s;
+        transform: translateX(-50px);
+        filter: blur(3px);
+      } 
+      .animate-show {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+      }
+      .animate:nth-child(2) {
+        transition-delay: 200ms;
+      }
+      .animate:nth-child(3) {
+        transition-delay: 400ms;
+      }
+      .animate:nth-child(4) {
+        transition-delay: 600ms;
+      }
+      @media(prefers-reduced-motion) {
+        .animate {
+          transition: none;
+          opacity: 1;
+          transform: translateX(0);
+          filter: blur(0);
+        }
+      }
+
+
+      .custom-shape-divider-bottom-1675184852 {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          overflow: hidden;
+          line-height: 0;
+          transform: rotate(180deg);
+      }
+
+      .custom-shape-divider-bottom-1675184852 svg {
+          position: relative;
+          display: block;
+          width: calc(100% + 1.3px);
+          height: 73px;
+      }
+
+      .custom-shape-divider-bottom-1675184852 .shape-fill {
+          fill: #FFFFFF;
+      }
+      .custom-shape-divider-top-1675185113 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          overflow: hidden;
+          line-height: 0;
+      }
+
+      .custom-shape-divider-top-1675185113 svg {
+          position: relative;
+          display: block;
+          width: calc(100% + 1.3px);
+          height: 117px;
+      }
+
+      .custom-shape-divider-top-1675185113 .shape-fill {
+          fill: #FFFFFF;
+      }
+    </style>
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.ehaupt.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '3']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+</head>
+<body>
+<div class="rellax" id="background-me"></div>
+
+<div class="wrapper">
+<div class="container-md">
+  <h2 class="mt-2" id="social-links">
+    <a href="https://www.linkedin.com/in/marcel-haupt-bb593a163/" class="text-secondary shadow-sm"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/mahaupt" class="text-secondary shadow-sm"><i class="fab fa-github-square"></i></a>
+  </h2>
+</div>
+
+<div class="spacer"></div>
+
+<article>
+  <div class="container-md text-white">
+      <div class="row pb-5 pt-3">
+          <div class="col-sm-9 col-lg-8">
+            <h1 class="h2 mt-4 txt-shadow">Erschaffe skalierbare Geschäftsmöglichkeiten mit deiner eigenen Webplattform</h1>
+            <p class="txt-shadow" style="font-size:1.1em;">
+              <b>Entdecke die Zukunft der Webtechnologie mit Marcel Haupt und seinem Team - Über ein Jahrzehnt Erfahrung im Software- und IT Systemlösungen.</b>
+              Spezialisiert auf die Erstellung von Web-Apps und Software-as-a-service Plattformen, streben wir danach, Dein Geschäft auf die nächste Stufe zu bringen und dem Wettbewerb immer einen Schritt voraus zu sein. Kontaktiere uns noch heute, um Deine Pläne zu verwirklichen!</p>
+            <p><a href="#services" class="btn btn-secondary shadow"><i class="fas fa-arrow-down"></i> Finde heraus, was wir tun</a></p>
+          </div>
+      </div>
+
+  </div>
+</article>
+
+<div class="spacer"></div>
+
+<div class="custom-shape-divider-bottom-1675184852">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+      <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+      <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+  </svg>
+</div>
+</div> <!-- div.wrapper -->
+
+<div class="bg-color wrapper">
+  <br>
+
+
+  <article class="container-md" id="services">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="mt-3 mb-5"><i class="fas fa-pencil-alt"></i> Was wir tun</h3>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-12 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <div class="container-fluid h-100">
+            <div class="row h-100">
+              <div class="col-sm-3 col-md-2 text-center">
+                <i class="mt-2 fa-6x fas fa-cubes text-danger"></i>
+              </div>
+              <div class="col-sm-9 col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title">Software für das Web</h5>
+                  <p class="card-text">
+                    <ul>
+                      <li>Entwicklung von speziell zugeschnittenen Web Apps / SAAS</li>
+                      <li>Nutzung von neusten Technologien und Designtrends, um benutzerfreundliche und atemberaubende Oberflächen zu gestalten</li>
+                      <li>Performanceoptimierung auf verschiedensten Geräten durch die implementierung von Responsive Design</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <div class="container-fluid h-100">
+            <div class="row h-100">
+              <div class="col-sm-3 col-md-2 text-center">
+                <i class="mt-3 fa-5x fas fa-cloud text-primary"></i>
+              </div>
+              <div class="col-sm-9 col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title">IT Infrastruktur</h5>
+                  <p class="card-text">
+                    <ul>
+                      <li>Design und Implementierung skalierbarer und sicherer Infrastruktur-Lösungen</li>
+                      <li>Erfahrung im Bereich Kubernetes und Cloud Computing, insbesondere Amazon Web Services und Microsoft Azure.</li>
+                      <li>Regelmäßige Wartung und Überwachung, um eine optimale Leistung zu gewährleisten und Ausfallzeiten zu vermeiden.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <div class="container-fluid h-100">
+            <div class="row h-100">
+              <div class="col-sm-3 col-md-2 text-center">
+                <i class="mt-3 fa-4x fas fa-terminal text-dark"></i>
+              </div>
+              <div class="col-sm-9 col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title">Beratung</h5>
+                  <p class="card-text">
+                    <ul>
+                      <li>Fachkundige Beratung und Anleitung für Unternehmen zu unterschiedlichen technischen Themen</li>
+                      <li>Aktuell umgesetzte Technologieinfrastruktur bewerten und Verbesserungsbedarf ermitteln.</li>
+                      <li>Entwickeln und umsetzen von strategischen Plänen, um technologische Fähigkeiten zu verbessern und das Geschäftswachstum zu unterstützen.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+
+  <div class="spacer"></div>
+
+
+  <article class="container-md">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="mt-3 mb-5"><i class="fas fa-user"></i> Über mich</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 col-md-3 col-lg-3 text-center animate">
+        <div class="microtx">
+          <img src="./res/img/me.jpeg" alt="Das bin ich!" class="img-fluid rounded profile-img" />
+        </div>
+      </div>
+      <div class="col-6 text-justify animate">
+        <div class="microtx">
+          Hallo, mein Name ist Marcel und ich bin Verkehrspilot und IT-Unternehmer. Seit 2016 arbeite ich mit meinem Team daran, moderne und professionelle Webplattformen sowie Software-as-a-Service-Lösungen zu entwickeln. Wir helfen unseren Kunden dabei, skalierbare Geschäftsmöglichkeiten zu erschließen und ihre Online-Präsenz zu optimieren. Wenn du auf der Suche nach einer maßgeschneiderten SAAS-Plattform bist, die auf deine individuellen Bedürfnisse zugeschnitten ist, dann bist du bei uns genau richtig.
+        </div>
+      </div>
+    </div>
+
+  </article>
+
+
+  <div class="spacer"></div>
+
+
+  <article class="container-md">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="mt-3 mb-5"><i class="fas fa-certificate"></i> Zertifikate</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 col-md-2 col-lg-2 text-center animate">
+        <div class="microtx">
+          <img class="img-fluid" src="./res/img/aws_ccp.png" alt="AWS Certified Cloud Practicioner">
+          <small><a href="https://www.youracclaim.com/earner/earned/badge/2647b5bf-52fa-4281-9eb8-0e311a2d237a" target="_blank">Acclaim Link</a></small>
+        </div>
+      </div>
+      <div class="col-4 col-md-2 col-lg-2 text-center animate">
+        <div class="microtx">
+          <img class="img-fluid" src="./res/img/aws_saa.png" alt="AWS Certified Cloud Practicioner">
+          <small><a href="https://www.youracclaim.com/earner/earned/badge/a2b2398c-22f7-44c4-b0ff-75f37ae2682a" target="_blank">Acclaim Link</a></small>
+        </div>
+      </div>
+      <div class="col-4 d-flex animate">
+        <div class="align-self-center">und mehr...</div>
+      </div>
+    </div>
+
+  </article>
+
+  <div class="spacer"></div>
+
+  <article class="container-md">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="mt-3 mb-5">Unsere neusten Kunden</h3>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-12 col-md-6 col-lg-4 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/customers/mysnackmap.png" class="card-img-top" alt="MySnackMap Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">MySnackMap</h5>
+            <p class="card-text">MySnackMap ist ein digitales Restaurantverzeichnis und verbessert zudem die Kommunikation zwischen Gastronomen und Kunden</p>
+            <a href="https://app.mysnackmap.de" target="_blank" class="btn btn-secondary">Zur Webseite</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/customers/brebas.png" class="card-img-top" alt="BreBas ID Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">BreBas ID</h5>
+            <p class="card-text">BreBas ID ermöglicht die Digitalisierung der Visitenkarte. Mittels einer individuell gestalteten NFC-Karte, können aktuelle persönlichen Kontaktdaten übertragen werden. Über ein Onlineportal können die Kontaktdaten jederzeit aktualisiert werden.</p>
+            <a href="https://brebas-id.com" target="_blank" class="btn btn-secondary">Zur Webseite</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/customers/ojap.png" class="card-img-top" alt="OJAP Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">One Jump Ahead Plans</h5>
+            <p class="card-text">One Jump Ahead Plans ist ein Planungstool für Reiseagenten spezialisiert auf Disney und Universal Studio Trips. Mittels Drag&Drop kann mit 700 vorerstellten Attraktionen innerhalb von wenigen Minuten ein zugeschnittener Reiseplan erstellt werden. Die Pläne können dann als PDF exportiert und verschickt werden.</p>
+            <a href="https://onejumpaheadplans.com" target="_blank" class="btn btn-secondary">Zur Webseite</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/customers/bestello.png" class="card-img-top" alt="Bestello Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">Bestello</h5>
+            <p class="card-text">Bestello ist eine Webapp zur Darstellung von digitalen Speisekarten sowie dem zugehörigen Backend für die Bestellabwicklung.</p>
+            <a href="https://bestello.at" target="_blank" class="btn btn-secondary">Zur Webseite</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+
+  <div class="spacer"></div>
+
+  <article class="container-md">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="mt-3 mb-5"><i class="fas fa-search"></i> Weitere Projekte - <a href="https://github.com/mahaupt">Link zu Github!</a></h3>
+      </div>
+    </div>
+
+    <div class="row" id="project-showcase">
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img style="padding: 30px;" src="./res/img/chia-logo-dark.svg" class="card-img-top" alt="Neural Network Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">Chia Mining Rig</h5>
+            <p class="card-text">Selbsterstellter Chia Server mit über 500 TB. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/img/nn.jpg" class="card-img-top" alt="Neural Network Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">Artificial Neural Network</h5>
+            <p class="card-text">Eigene AI zum Erkennen von handgezeichneten Zahlen.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/img/zipsearch.png" class="card-img-top" alt="ZIP_GeoSearch Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">ZIP GeoSearch</h5>
+            <p class="card-text">Suchmaschine für schnelle Postleitzahl Distanzsuchen. Dockerisiert.</p>
+            <a href="https://github.com/mahaupt/zip_geosearch" target="_blank" class="btn btn-primary mb-1">Link zu Github</a>
+            <a href="http://ehaupt.de:8080/Frankfurt" target="_blank" class="btn btn-secondary mb-1">API Zugangspunkt</a>
+            <a href="http://ehaupt.de:8080/28201/20" target="_blank" class="btn btn-secondary">Distanzsuche</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/img/aivisual.png" class="card-img-top" alt="Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">AI-Visual</h5>
+            <p class="card-text">Visuelle representation verschiedener AI Algorithmen. WIP: Neural Network</p>
+            <a href="https://cbacon93.github.io/ai-visual/" target="_blank" class="btn btn-primary mb-1">Link zur Webapp</a>
+            <a href="https://github.com/mahaupt/ai-visual" target="_blank" class="btn btn-secondary">Link zu Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/img/pcb.jpg" class="card-img-top" style="width: 50% !important; margin: auto;" alt="Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">SDRAM Breakout</h5>
+            <p class="card-text">Experimentelle Platine für DDR/SDRAM</p>
+            <button class="btn btn-secondary" disabled>Link following</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/img/sf.png" class="card-img-top" alt="Spacefortress Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">Spacefortress</h5>
+            <p class="card-text">Endlich ist die Technologie soweit wie die 80er SciFi Filme. Ich präsentiere den ASCII Raumschiff Simulator. WIP: Multiplayer</p>
+            <a href="https://github.com/mahaupt/spacefortress" target="_blank" class="btn btn-primary">Link zu Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/img/backup.jpg" class="card-img-top" alt="Backup Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">Backup Scripts</h5>
+            <p class="card-text">Scripts zum Erstellen von verschlüsselten Backups über SSH</p>
+            <a href="hhttps://gist.github.com/mahaupt/fc637505bb198687347c607df73acb26" target="_blank" class="btn btn-primary">Link zu Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/img/logbook.jpeg" class="card-img-top" alt="Logbook Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">Logbook</h5>
+            <p class="card-text">Logbook zum Aufzeichnen von Fahrten. Geschrieben in React mit Laravel Backend.</p>
+            <a href="https://github.com/mahaupt/logbook" target="_blank" class="btn btn-primary">Link zu Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/img/screeps.jpeg" class="card-img-top" alt="Screeps Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">Screeps AI</h5>
+            <p class="card-text">Screeps ist ein Spiel für Programmierer bei dem es darum geht eine eigene AI zu schreiben.</p>
+            <a href="https://github.com/mahaupt/screeps" target="_blank" class="btn btn-primary">Link zu Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/img/rcon.jpeg" class="card-img-top" alt="RCON Web Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">Rcon Web Controller</h5>
+            <p class="card-text">Webbasierter RCON Controller. Zum Steuern von Gamingservern.</p>
+            <a href="https://github.com/mahaupt/web_rcon_ctrl" target="_blank" class="btn btn-primary">Link zu Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/img/triangle.jpg" class="card-img-top" alt="Triangle Smash Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">Triangle Smash</h5>
+            <p class="card-text">Lernprojekt Unity Teil 2! Geometrischer shooter. Viel lustiger als Teil 1!</p>
+            <a href="https://github.com/mahaupt/TriangleSmash/releases/download/1.0.0/Triangle.zip" target="_blank" class="btn btn-primary" style="margin-bottom: 5px;">PC Download v1.0</a>
+            <a href="https://github.com/mahaupt/TriangleSmash/releases/download/1.0.0/Triangle.app.zip" target="_blank" class="btn btn-primary">OSX Download v1.0</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/img/peterpixel.jpg" class="card-img-top" alt="PeterPixel Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">PeterPixel</h5>
+            <p class="card-text">Ein Jump 'n run Spiel. Lernprojekt für Unity. Es ist den Download nicht wert. Und ja ich habe alle Texturen selbst gemacht. Ja auch die Sounds.</p>
+            <a href="https://s1.ehaupt.de/res/peterpixel/PeterPixel.zip" target="_blank" class="btn btn-primary" style="margin-bottom: 5px;">PC Download v1.0</a>
+            <a href="https://s1.ehaupt.de/res/peterpixel/PeterPixel.app.zip" target="_blank" class="btn btn-primary">OSX Download v1.0</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/img/mip.png" class="card-img-top" alt="MIP Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">Mord In Palermo</h5>
+            <p class="card-text">Browsergame Mord In Palermo geschrieben in PHP / JS. Bachelorarbeit. </p>
+            <a href="https://mip.ehaupt.de/" target="_blank" class="btn btn-primary mb-1">Link zur Webapp</a>
+            <a href="https://github.com/mahaupt/mord_in_palermo" target="_blank" class="btn btn-secondary">Link zu Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/img/ray.jpg" class="card-img-top" alt="Screenshot todo">
+          <div class="card-body">
+            <h5 class="card-title">SimpleRay</h5>
+            <p class="card-text">Einfache geometrische Raytracing Engine in C++ </p>
+            <a href="https://github.com/mahaupt/SimpleRay" target="_blank" class="btn btn-secondary">Link zu Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4 animate">
+        <div class="card h-100 microtx microtx-sdw">
+          <img src="./res/img/chess.jpg" class="card-img-top" alt="MIP Screenshot todo">
+          <div class="card-body">
+            <h5 class="card-title">Chess</h5>
+            <p class="card-text">C++ Schach-Bot und Client mit Alpha-Beta optimierung. </p>
+            <a href="https://github.com/mahaupt/chess" target="_blank" class="btn btn-secondary">Link zu Github</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row" id="project-showcase-expand">
+      <div class="col-12">
+        <button onclick="showMoreProjects()" class="btn btn-outline-dark"><i class="fas fa-angle-double-down"></i></button>
+      </div>
+    </div>
+  </article>
+<br>
+</div>
+<div class="wrapper">
+  <div class="custom-shape-divider-top-1675185113">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+  </div>
+</div>
+
+<div class="spacer" style="min-height: 200px;"></div>
+
+<article class="container-md animate" id="letstalk">
+  <div class="row">
+    <div class="col-12 card pb-4 microtx microtx-sdw text-center">
+      <h3 class="mt-3"><i class="far fa-envelope"></i> Lass uns reden!</h3>
+      <p>
+        Erlebe die Zukunft der Webtechnologie schon heute.<br>Kontaktiere uns noch heute, um mehr zu erfahren!
+      </p>
+    
+      <p><a class="insert-secret btn btn-primary" href="#">marcel .A.T. this.domain</a></p>
+      <a href="./res/public.gpg">(Optional) GPG Key</a><br>
+      <code>35FB 8BF4 CC80 6C8E 3C11 0F0C E637 584A F225 D84C</code>
+    </div>
+  </div>
+</article>
+    
+<div class="container-md">
+  <div class="row">
+    <div class="col-12 text-center">
+      <img src="./res/img/server.png" alt="server" style="max-height: 500px; max-width: 100%;"/>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-md">
+  <div class="row justify-content-center">
+    <footer class="col-12 text-center footer">
+      <small>Diese Website speichert keine personenbezogene Daten und nutzt keine Cookies. Links verweisen auf externe Seiten auf die der Author keinen Einfluss hat. Author: <span id="insert-author">JS Insert</span></small>
+    </footer>
+  </div>
+</div>
+
+<script>
+window.onload = function() {
+  let elements = document.getElementsByClassName("insert-secret");
+  let secret = decodeURIComponent(atob("bWFyY2VsJTQwZWhhdXB0LmRl"));
+  let secret2 = decodeURIComponent(atob("TWFyY2VsJTIwSGF1cHQlMkMlMjBOZXVnYXNzZSUyMDI4JTJDJTIwQVQtNzExMSUyMFBhcm5kb3JmJTJDJTIwRW1haWwlM0ElMjBtYXJjZWwlNDBlaGF1cHQuZGU="));
+  for(let i in elements) {
+    elements[i].innerHTML = secret;
+    elements[i].href = "mailto:" + secret;
+  }
+
+  document.getElementById("insert-author").innerHTML = secret2;
+
+  let display_count = 4;
+  let projects = document.getElementById("project-showcase").children;
+  for (let i in projects) {
+    if (i >= display_count) {
+      projects[i].style.display = 'none';
+    }
+  }
+}
+function showMoreProjects() {
+  let display_count = 4;
+  let projects = document.getElementById("project-showcase").children;
+  for (let i in projects) {
+    if (!projects[i].style) continue;
+    if (projects[i].style.display == "none") {
+      projects[i].style.display = "block";
+      display_count--;
+    }
+
+    if (display_count <= 0) return;
+  }
+
+  //only go here if there is no more projects to show
+  document.getElementById("project-showcase-expand").style.display = "none";
+}
+</script>
+<script type="text/javascript" src="./res/csx/rellax.min.js"></script>
+<script>
+var rellax = new Rellax('.rellax', {
+  speed: -10,
+  center: false,
+  wrapper: null,
+  round: true,
+  vertical: true,
+  horizontal: false
+});
+</script>
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate-show");
+    } else {
+      entry.target.classList.remove("animate-show");
+    }
+  })
+});
+
+let animations = document.querySelectorAll(".animate");
+animations.forEach((el) => observer.observe(el));
+</script>
+</body>
+</html>

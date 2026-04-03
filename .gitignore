@@ -1,0 +1,7 @@
+**/.DS_Store
+node_modules/
+_site/
+.11ty-vite/
+src/css/output.css
+Claude.md
+.claude/
