@@ -60,14 +60,11 @@ export default function Index({ now }) {
             Ich bin Marcel – A320-Pilot und Softwareentwickler aus Deutschland.
             Hauptberuflich fliege ich für eine europäische Airline, nebenberuflich
             baue ich Web-Plattformen, SaaS-Produkte und Infrastruktur. AWS,
-            Kubernetes, CI/CD – das kenne ich aus der Zeit, als Software noch mein
-            Hauptberuf war.
+            Kubernetes, CI/CD.
           </p>
           <p>
             Daneben: zu viele Hobby-Projekte. Schach-Bots, Raytracing-Engines,
-            ein selbst gebauter Chia-Server mit 500 TB. Das Cockpit und der
-            Terminal haben mehr gemeinsam als man denkt – in beiden gibt es
-            keinen Platz für Unschärfe.
+            ein selbst gebauter Chia-Server mit 500 TB.
           </p>
         </div>
       </section>

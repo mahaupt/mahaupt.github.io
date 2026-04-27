@@ -9,7 +9,7 @@ export default function Flying({ collections }) {
       <header className="mb-16">
         <h1 className="text-4xl font-bold tracking-tight mb-4">Fliegen</h1>
         <p className="text-zinc-400 text-lg leading-relaxed">
-          Erlebnisse aus dem Cockpit. Hauptberuflich A320, daneben alles was fliegt.
+          Erlebnisse aus dem Cockpit.
         </p>
       </header>
 

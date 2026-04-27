@@ -9,7 +9,7 @@ export default function Projekte({ collections }) {
       <header className="mb-16">
         <h1 className="text-4xl font-bold tracking-tight mb-4">Projekte</h1>
         <p className="text-zinc-400 text-lg leading-relaxed">
-          Dinge, die ich gebaut habe – mit dem Warum dahinter.
+          Dinge, die ich gebaut habe. Kleine Ausflüge, Experimente und große Projekte.
         </p>
       </header>
 
